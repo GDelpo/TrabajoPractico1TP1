@@ -38,6 +38,11 @@ public class Test {
 //       System.out.println(n1.toString());
        
         n1.mostrar();
+        
+        n1.vaciar();
+        n1.mostrar();
+        n1.agregarIntegrante("miguel");
+        n1.mostrar();
        
 	}
 

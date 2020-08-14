@@ -100,6 +100,8 @@ public class Grupo {
 		return nombre;
 	}
 
+	
+//	Falta arreglar que devuelva null
 	public String removerIntegrante(String nombreIntegrante) {
 
 		String nombre = buscarIntegrante(nombreIntegrante);
@@ -111,6 +113,10 @@ public class Grupo {
 		}
 		return nombre;
 
+	}
+
+	public void vaciar() {
+		integrantes.removeAll(integrantes);
 	}
 
 }

@@ -6,18 +6,22 @@ public class JuegosJuventud {
 	private static ArrayList<Atleta> atletas = new ArrayList<Atleta>(0);
 	public static Scanner input = new Scanner(System.in); // cerrar el scanner al final
 	
-	public Atleta encontrarGanador(ArrayList<Atleta> atletas) {
+	public ArrayList<Atleta> encontrarGanador(ArrayList<Atleta> atletas) {
 		int tiempoMasRapido = Integer.MAX_VALUE;
 		Atleta masRapido = null;
+		ArrayList<Atleta> multiplesGanadores = new ArrayList<Atleta>();
 		for(int i= 0; i < atletas.size(); i++) {
 			if(tiempoMasRapido>atletas.get(i).getTiempo()) {
 				tiempoMasRapido=atletas.get(i).getTiempo();
 				masRapido = atletas.get(i);
+			}else if(tiempoMasRapido==atletas.get(i).getTiempo()){
+				multiplesGanadores.add(atletas.get(i));
 			}
-			
 		}
-		return masRapido;
+		multiplesGanadores.add(masRapido); //este add es para agregar al 1er atleta mas ripido encontrado
+		return multiplesGanadores;
 	}
+	
 	public static void main(String[] args) {
 	
 	

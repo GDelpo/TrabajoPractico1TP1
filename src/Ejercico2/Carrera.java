@@ -70,7 +70,7 @@ public class Carrera {
 	public void encontrarGanador(ArrayList<Atleta> participantes) {
 
 		ArrayList<Atleta> multiplesGanadores = new ArrayList<Atleta>();
-		double tiempoMasRapido = Integer.MAX_VALUE;
+		double tiempoMasRapido = Double.MAX_VALUE;
 		Atleta masRapido = null;
 
 		for (int i = 0; i < participantes.size(); i++) {

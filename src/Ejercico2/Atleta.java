@@ -1,10 +1,10 @@
-package Ej2;
+package Ejercico2;
 
 public class Atleta {
 private String nombre;
-private int tiempo;
+private double tiempo;
 
-public Atleta() {
+public Atleta(String nombre, double tiempo) {
 	this.nombre = getNombre();
 	this.tiempo = getTiempo();
 }
@@ -15,10 +15,10 @@ public String getNombre() {
 public void setNombre(String nombre) {
 	this.nombre = nombre;
 }
-public int getTiempo() {
+public double getTiempo() {
 	return tiempo;
 }
-public void setTiempo(int tiempo) {
+public void setTiempo(double tiempo) {
 	this.tiempo = tiempo;
 }
 @Override

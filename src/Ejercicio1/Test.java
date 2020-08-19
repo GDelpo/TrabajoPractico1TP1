@@ -15,34 +15,35 @@ public class Test {
 		
 		n1.integrantes.add("guido");
 		
-		System.out.println(n1.toString());
+		n1.mostrar();
 		
         n1.agregarIntegrante("guido");
         
-        System.out.println(n1.toString());
+        n1.mostrar();
         
         System.out.println(n1.obtenerIntegrante(1));
         
         n1.agregarIntegrante("carlitos");
         
-        System.out.println(n1.toString());
+        n1.mostrar();
         
-//        Scanner input = new Scanner(System.in); 
-//        
-//        System.out.println("Ingrese un nombre:" );
-//        
-//        String buscado = input.nextLine();
-//                         
+        Scanner input = new Scanner(System.in); 
+        
+        System.out.println("Ingrese un nombre:" );
+        
+        String buscado = input.nextLine();
+                         
 //        System.out.println(n1.buscarIntegrante(buscado));
-//        
-//       System.out.println(n1.toString());
+        
+        System.out.println(n1.removerIntegrante(buscado));
+       
        
         n1.mostrar();
-        
-        n1.vaciar();
-        n1.mostrar();
-        n1.agregarIntegrante("miguel");
-        n1.mostrar();
+//        
+//        n1.vaciar();
+//        n1.mostrar();
+//        n1.agregarIntegrante("miguel");
+//        n1.mostrar();
        
 	}
 

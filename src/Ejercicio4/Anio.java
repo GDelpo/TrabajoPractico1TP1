@@ -1,4 +1,4 @@
-package Ejer4;
+package Ejercicio4;
 
 import java.util.Arrays;
 
